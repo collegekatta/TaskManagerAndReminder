@@ -28,7 +28,7 @@ public class EmailSender {
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("", "");
+                        return new PasswordAuthentication("", ""); //email , password
                     }
                 });
         
@@ -39,7 +39,7 @@ public class EmailSender {
             MimeMessage message = new MimeMessage(session);
 
             // Set the sender and recipient email addresses
-            message.setFrom(new InternetAddress(""));
+            message.setFrom(new InternetAddress("")); // email
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
 
             // Set the email subject and body

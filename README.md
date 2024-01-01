@@ -15,7 +15,7 @@ This Java project is a task manager and reminder system designed to help users o
 	- [x] Update task
 	- [ ] Action log by task
 - [ ] Reminders
-	- [ ] Email setup and configuration
+	- [x] Email setup and configuration
 	- [ ] Reminders validation and triggers
 
 ### How to Clone and Use the Project
@@ -25,7 +25,7 @@ Begin by forking the project's GitHub repository to your own account. This will 
 
 2. Clone the Repository:
 After forking, clone the repository to your local machine using Git. You can do this by running the following command in your terminal:
-`git clone https://github.com/your-username/Task-Manager-And-Reminder.git`
+`git clone https://github.com/your-username/TaskManagerAndReminder.git`
 
 3. Move the Folder to Eclipse Workspace:
 Open Eclipse IDE and move the cloned project folder to your Eclipse workspace directory.
@@ -39,16 +39,19 @@ Import the database dump file available in the project directory: `./taskManager
 6. Update MySQL Credentials:
 Navigate to the `./src/database/ConnectDb.java` file and update the MySQL database credentials to match your local database configuration.
 
-7. Resolve Errors:
+7. Update email Credentials:
+Navigate to the `./src/email/EmailSender.java` file and update the email login credentials to send emails.
+
+8. Resolve Errors:
 If you encounter any errors during setup due to Eclipse or MySQL version differences, resolve them by referring to the documentation or seeking online assistance.
 
-8. Run the Project:
+9. Run the Project:
 Once everything is set up, run the project in Eclipse to start using the task manager and reminder system.
 
-9. Make Changes/Add Functionalities:
+10. Make Changes/Add Functionalities:
 If you want to make improvements or add new features to the project, feel free to do so. Edit the code as needed.
 
-10. Push Changes and Create a Pull Request:
+11. Push Changes and Create a Pull Request:
 After making changes, push the code back to your forked repository and create a new branch if necessary. Then, create a pull request to contribute your changes to the original project.
 
 
